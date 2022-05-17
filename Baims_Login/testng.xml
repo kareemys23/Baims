@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Baims">
+  <test name="Login">
+    <classes>
+      <class name="base.PreLogin">
+      <methods>
+      	<include name="Login"/>
+      </methods>
+      </class>
+      <class name="baimsLogin.Login">
+      <methods>
+      	<include name="ValidGmail"/>
+      	<include name="InvalidGmail"/>
+      	<include name="InvalidGPassword"/>
+      </methods>
+      </class>
+      <class name="baimsLogin.Twitter_Login">
+      <methods>
+      	<include name="ValidTwitter"/>
+      	<include name="InvalidTMmail"/>
+      	<include name="InvalidTPassword"/>
+      </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
